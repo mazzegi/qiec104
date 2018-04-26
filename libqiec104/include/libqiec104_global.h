@@ -1,0 +1,17 @@
+#ifndef LIBQIEC104_GLOBAL_H
+#define LIBQIEC104_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBQIEC104_LIBRARY)
+#  define LIBQIEC104SHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define LIBQIEC104SHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+namespace QIEC104 {
+
+
+}
+
+#endif // LIBQIEC104_GLOBAL_H
